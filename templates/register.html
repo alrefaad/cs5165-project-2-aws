@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+
+    <h1>Register</h1>
+
+    <form method="POST" action="/register" enctype="multipart/form-data">
+
+        Username:
+        <input type="text" name="username" required>
+        <br><br>
+
+        Password:
+        <input type="password" name="password" required>
+        <br><br>
+
+        First Name:
+        <input type="text" name="firstname">
+        <br><br>
+
+        Last Name:
+        <input type="text" name="lastname">
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        Address:
+        <input type="text" name="address">
+        <br><br>
+
+        File:
+        <input type="file" name="file" required>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <br>
+
+    <a href="/login">Already registered? Login</a>
+
+</body>
+</html>

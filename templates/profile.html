@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information</title>
+</head>
+<body>
+
+    <h1>User Information</h1>
+
+    <p><b>Username:</b> {{ user[1] }}</p>
+    <p><b>First Name:</b> {{ user[4] }}</p>
+    <p><b>Last Name:</b> {{ user[5] }}</p>
+    <p><b>Email:</b> {{ user[3] }}</p>
+    <p><b>Address:</b> {{ user[6] }}</p>
+
+    <h2>Uploaded File</h2>
+
+    <p><b>File:</b> {{ user[7] }}</p>
+    <p><b>Word Count:</b> {{ user[9] }}</p>
+
+    <a href="/download/{{ user[1] }}">
+        <button>Download File</button>
+    </a>
+
+    <br><br>
+
+    <a href="/login">Login</a>
+    <br>
+    <a href="/">Register another user</a>
+
+</body>
+</html>
